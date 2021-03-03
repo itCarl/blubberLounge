@@ -1,0 +1,156 @@
+:root {
+    --clr-background: rgba(66, 148, 189, 1);
+
+    --clr-primary: rgba(66, 148, 189, 1);
+    --clr-primary-dark: rgba(49, 110, 140, .9);
+    --clr-secondary: #29AAF2;
+
+    --clr-accent: rgba(255, 255, 255, .5);
+    --clr-accent-hover: rgba(0, 0, 0, .3);
+
+}
+
+/* 
+*  TABLE OF CONTENTS
+*  
+*  0.0 - Variables
+*  1.0 - Reset
+*  2.0 - Globals
+*  3.0 - Typography
+*  4.0 - Layouts
+*    4.1 - Navigation
+*    4.2 - Section
+*    4.3 - 
+*  5.0 - Components
+*    5.1 - Buttons
+*    5.2 - Forms
+*    5.3 - 
+*  6.0 - Utillity
+*
+* 10.X - needs to be sorted
+*/
+
+
+/*  ================================
+        1.0 Reset
+    ================================ */
+
+/* not really needed... reboot.css does this already*/
+
+
+/*  ================================
+        2.0 Globals
+    ================================ */
+
+::selection {
+    color: var(--dark);
+    background: var(--clr-accent);
+}
+
+hr.divider {
+    border-color: var(--clr-primary);
+}
+
+hr.light {
+    border-color: var(--white);   
+}
+
+hr.dark {
+    border-color: var(--dark);   
+}
+
+.svg-border-angled svg {
+    color: var(--purple);
+    position: relative;
+    left: 0;
+    height: 3rem;
+    width: 100%;
+}
+
+
+/*  ================================
+        3.0 Typography
+    ================================ */
+
+.text-primary {
+    color: var(--clr-primary) !important;
+}
+
+
+/*  ================================
+        4.0 Layouts
+    ================================ */
+
+.bg-primary {
+    background-color: var(--clr-background) !important;        
+}
+
+/*  ---------------------
+        4.1 Navigation
+    --------------------- */
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: var(--clr-primary) !important;
+}
+
+
+/*  ---------------------
+        4.2 Sections
+    --------------------- */
+
+        /* Contact Section */
+footer#contact {
+    margin-top
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+
+/*  ================================
+        5.0 Components
+    ================================ */
+
+    /*  ---------------------
+        5.1 Buttons
+    --------------------- */
+.c-btn-primary {
+    color: var(--white);
+    background-color: var(--clr-primary); 
+}
+
+.c-btn-primary:hover,
+.c-btn-primary:focus,
+.c-btn-primary:active {
+    color: var(--white);
+    background-color: var(--clr-primary-dark);
+    border-color: var(--clr-primary-dark);
+}
+
+.c-btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .2);
+}
+
+
+
+/*  ================================
+        6.0 Utillity
+    ================================ */
+
+.tiny {
+    font-size: 30%;
+    font-weight: 400;
+}
+
+
+/*  ================================
+        10.0 needs to be sorted
+    ================================ */
+
+    /*  ---------------------
+        10.1 media queries
+    --------------------- */
+
+@media (max-width: 991px) { /*ultra fusch... aber ist erstmal ok*/
+    #mainNav img {
+        content: url('../assets/img/logo/blubber_lounge_dark.png');
+    }
+}
