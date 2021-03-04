@@ -19,8 +19,9 @@
 *  3.0 - Typography
 *  4.0 - Layouts
 *    4.1 - Navigation
-*    4.2 - Section
-*    4.3 - 
+*    4.2 - Header
+*    4.3 - Section
+*    4.4 - 
 *  5.0 - Components
 *    5.1 - Buttons
 *    5.2 - Forms
@@ -59,13 +60,6 @@ hr.dark {
     border-color: var(--dark);   
 }
 
-.svg-border-angled svg {
-    color: var(--purple);
-    position: relative;
-    left: 0;
-    height: 3rem;
-    width: 100%;
-}
 
 
 /*  ================================
@@ -77,6 +71,7 @@ hr.dark {
 }
 
 
+
 /*  ================================
         4.0 Layouts
     ================================ */
@@ -84,6 +79,16 @@ hr.dark {
 .bg-primary {
     background-color: var(--clr-background) !important;        
 }
+
+.svg-border-angled svg {
+    color: var(--clr-primary);
+    position: absolute;
+    top: -3.49rem; 
+    left: 0;
+    height: 3.5rem;
+    width: 100%;
+}
+
 
 /*  ---------------------
         4.1 Navigation
@@ -94,8 +99,53 @@ hr.dark {
 
 
 /*  ---------------------
-        4.2 Sections
+        4.1 Header
     --------------------- */
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
+/*  ---------------------
+        4.3 Sections
+    --------------------- */
+
+        /* About Section */
+section#about {
+    position: relative;
+}
 
         /* Contact Section */
 footer#contact {
@@ -103,6 +153,7 @@ footer#contact {
     background-color: var(--dark);
     color: var(--white);
 }
+
 
 
 /*  ================================
@@ -139,6 +190,7 @@ footer#contact {
     font-size: 30%;
     font-weight: 400;
 }
+
 
 
 /*  ================================
