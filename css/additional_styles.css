@@ -158,7 +158,71 @@ header.masthead h1 {
 
         /* About Section */
 section#about {
+    /*--padding-section-about: 15%; may be added at a later point in time again*/
+
     position: relative;
+    /* 
+    clip-path: polygon(0 var(--padding-section-about), 100% 0, 100% 100%, 0% 100%);
+    top: calc(var(--padding-section-about) * -1);
+    padding-top: 10rem;  .page-section padding: 8rem 0; overwrite
+    padding-bottom: 8rem; .page-section  padding: 8rem 0; overwrite
+    background: linear-gradient(146deg, var(--clr-primary) 0%, rgba(113,187,224,1) 100%);
+    */
+}
+
+        /* About Section */
+section#services {
+    /* may be added at a later point in time again 
+    padding-top: 4rem;  .page-section padding: 8rem 0; overwrite
+    padding-bottom: 8rem; .page-section padding: 8rem 0; overwrite
+    */
+}
+
+        /* Gallery / Portfolio  Section */
+.masonry {
+    columns: 2;
+    column-gap: 10px;
+}
+
+.masonry-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.masonry-item, .masonry-content {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.masonry-item {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+    transition: filter .25s ease-in-out;
+}
+
+.masonry-item:hover {
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+}
+
+.masonry-footer {
+    font-size: .75em;
+    opacity: .25;
+    text-align: center;
+    padding-top: 3em; 
+    padding-bottom: 3em;
+    margin-bottom: -1.5em;
+    transition: opacity 1s ease-in-out;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+        columns: 3;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .masonry {
+        columns: 4;
+    }
 }
 
         /* Contact Section */
