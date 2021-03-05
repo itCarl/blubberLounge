@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta http-equiv="cache-control" content="no-cache" />
- 	 	<meta http-equiv="pragma" content="no-cache" />
+        <!--<meta http-equiv="cache-control" content="no-cache" /> -->
+ 	 	<!--<meta http-equiv="pragma" content="no-cache" /> -->
         <meta name="description" content="just a small web project for Fun" />
         <meta name="author" content="Maximilian Mewes" />
         <title>Blubber Lounge</title>

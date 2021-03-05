@@ -107,7 +107,7 @@ hr.dark {
 }
 
 @media (max-width: 991px) { /*ultra fusch... aber ist erstmal ok*/
-    #mainNav.navbar-scrolled .navbar-brand img {
+    #mainNav .navbar-brand img {
         content: url('../assets/img/logo/blubber_lounge_dark.png');
     }
 }
@@ -214,11 +214,18 @@ section#services {
     transition: opacity 1s ease-in-out;
 }
 
+@media (max-width: 1023px) {
+    section#gallery .container-fluid {
+        padding: 0 1rem !important;
+    }
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .masonry {
         columns: 3;
     }
 }
+
 @media only screen and (min-width: 1024px) {
     .masonry {
         columns: 4;
